@@ -4,20 +4,23 @@ from app.models.boxingscraper import Scraper
 from app.models.boxingfilter import Filter
 from app.models.scrapescheduledb import FightModel
 
+
 fightmodel = FightModel()
 filter = Filter()
 fights_scraped = fightmodel.get_cached_fights()
+
+
 @app.route("/api/fights/")
 def get_upcoming_fights_route():
 
-    top = request.args.get('top', type=int)
-    month = request.args.get('month', type=str)
-    is_title = request.args.get('title', type=str)
-
-    fights = filter.get_fights(top, month, is_title, fights_scraped)
+    fights = filter.get_fights(
+        request.args.get('top', type=int),
+        request.args.get('month', type=str),
+        request.args.get('title', type=str),
+        fights_scraped
+    )
 
     return jsonify(fights)
-    #return "hi"
 
 
 @app.route("/api/fights/<string:name>/")
