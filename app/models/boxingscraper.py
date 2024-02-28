@@ -5,6 +5,7 @@ class Scraper:
     def __init__(self):
         pass
 
+
     def get_schedule(self):
         url = 'https://www.boxingscene.com/schedule'
         response = requests.get(url)

@@ -75,6 +75,7 @@ class Filter:
 
         return fights
 
+
     def get_fight_by_name(self, name, fights_scraped):
 
         filtered_fights = []
