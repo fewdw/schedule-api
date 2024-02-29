@@ -13,7 +13,7 @@ class Filter:
             return "all_none"
 
         # params have errors
-        if not isinstance(top, int):
+        if not isinstance(top, int) or top > 50:
             errors.append("invalid")
             print("invalid top")
         if str(month).upper() not in ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC', 'ANY']:
@@ -96,11 +96,10 @@ class Filter:
 
     def get_today_date(self):
         current_date = datetime.datetime.now()
-        day = current_date.day
         month = current_date.strftime("%B")[:3]
+        day = current_date.strftime('%-d')
 
         current = f"{month} {day}"
-
         return current
 
 
