@@ -1,0 +1,22 @@
+[
+  {
+    "boxers": ["Nathan Heaney", "Brad Pauls"],
+    "date": "Mar 16",
+    "day": "Saturday",
+    "division": "British Middleweight Champion",
+    "is_title": false,
+    "location": "Resorts World Arena in Birmingham",
+    "network": ["TNTSPORTS"],
+    "time": "Check Local Listing"
+  },
+  {
+    "boxers": ["William Zepeda", "Maxi Hughes"],
+    "date": "Mar 16",
+    "day": "Saturday",
+    "division": "Lightweight Contest",
+    "is_title": false,
+    "location": "Cosmopolitan, Las Vegas",
+    "network": ["DAZN"],
+    "time": "Check Local Listing"
+  }
+]

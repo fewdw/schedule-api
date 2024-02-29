@@ -1,0 +1,12 @@
+[
+  {
+    "boxers": ["Anthony Joshua", "Francis Ngannou"],
+    "date": "Mar 8",
+    "day": "Friday",
+    "division": "Heavyweight Fight",
+    "is_title": false,
+    "location": "Riyadh, Saudi Arabia",
+    "network": ["DAZN, TNTSPORTS"],
+    "time": "Check Local Listing"
+  }
+]

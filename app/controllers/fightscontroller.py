@@ -37,3 +37,7 @@ def get_fights_today_route():
     fights = filter.get_fights_today(fights_scraped)
 
     return fights
+
+@app.route("/")
+def time_check():
+    return jsonify({"date":f"{filter.get_today_date()}"})
